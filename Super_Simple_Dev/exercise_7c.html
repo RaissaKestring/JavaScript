@@ -8,8 +8,12 @@
   <body>
 
     <script>
-      function greet() {
-        console.log(`Hello ${()}`)
+      function greet(name) {
+        if (!name) {
+          console.log('Hi there!');
+        } else {
+          console.log(`Hello ${name}!`);
+        }
       }
     </script>
   </body>
