@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6i</title>
+  </head>
+  <body>
+    <script>
+      const aleatorio = Math.random();
+      let result;
+
+      if (aleatorio < 0.5) {
+        result = 'heads';
+      } else {
+        result = 'tails';
+      }
+
+      console.log(`Your number was ${aleatorio}`);
+       
+      const guess = 'heads';
+
+      if (guess === result) {
+          console.log('You win');
+      } else {
+          console.log('You lose!')
+      }
+
+    </script>
+  </body>
+</html>
