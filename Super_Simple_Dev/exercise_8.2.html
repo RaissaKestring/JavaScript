@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>8a</title>
+</head>
+<body>
+  <script>
+    product = {
+      name: 'basketball',
+      price: 2095
+    }
+
+    product1 = {
+      name: 'cup',
+      price: 40
+    }
+
+    product2 = {
+      name: 'bottle',
+      price: 60
+    }
+    
+    //console.log(product);
+
+    product.price += 500;
+    //console.log(product.price);
+
+    product['delivey-time'] = '3 days'
+    //console.log(product)
+
+    function comparePrice(product1, product2) {
+        if (product1.price << product2.price) {
+          return (product1);
+        } else {
+          return (product2);
+        }
+      }
+
+    function isSameProduct(product1, product2) {
+      if (
+        product1.name === product2.name &&
+        product1.price === product2.price
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      let exemplo = 'eu amo sorvete';
+      let exemplomaiusculo = exemplo.toUpperCase();
+      console.log(exemplo);
+  
+      let exemplo1 = 'eu adoro gatinhos';
+      let exemplo1Repetido = exemplo1.repeat(5);
+      console.log(exemplo1Repetido);
+
+      let exemplo2 = 'vruuummm';
+      let exemplo2Maiusculo = exemplo2.toUpperCase();
+      console.log(exemplo2Maiusculo);
+
+      let exemplo2Repetido = exemplo2.repeat(100);
+      console.log(exemplo2Repetido);
+
+  </script>
+</body>
+</html>
