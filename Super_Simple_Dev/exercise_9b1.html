@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9b</title>
+    <button class="first-button">9a</button>
+    <button class="second-button">9b</button>
+  </head>
+  <body>
+    <script>
+      console.log(document.querySelector('second-button'));
+
+      document.querySelector('.second-button')
+        .innerHTML = 'Second button';
+
+      console.log(document.querySelector('first-button'));
+
+      document.querySelector('.first-button')
+        .innerHTML = 'First button';
+    </script>
+  </body>
+</html>
