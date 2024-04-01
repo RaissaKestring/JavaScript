@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9c</title>
+  </head>
+  <body>
+<input placeholder="Name" class="js-name-input" onkeydown="submitButton(event)
+submitButton(event)">
+
+<button onclick="
+  const inputElement = document.querySelector('.js-name-input');
+  //Esta linha seleciona o elemento de entrada de texto com a classe js-name-input e o armazena na variável inputElement
+  document.querySelector('.js-message')
+  //Esta linha seleciona o elemento com a classe js-message, o parágrafo vazio abaixo do botão, e define seu conteúdo interno - innerHTML como uma string que contém Your name is: seguido pelo valor do campo de entrada de texto -inputElement.value, ou seja, o nome inserido pelo usuário.
+    .innerHTML = `Your name is: ${inputElement.value}`;
+">Submit</button>
+
+    <p class="js-message"></p>
+
+    <script>
+      function submitButton(event) {
+        if (event.key === 'Enter') {
+          const inputElement = document.querySelector('.js-name-input');
+          document.querySelector('.js-message')
+            .innerHTML = `Your name is: ${inputElement.value}`;
+        }
+      }
+    </script>
+  </body>
+</html>
