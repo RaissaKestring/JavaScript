@@ -32,6 +32,7 @@ h1 {
   padding: 10px;
 }
 
+.ativa,
 .tecla {
   background-color: var(--branca);
   border-radius: 30px;
