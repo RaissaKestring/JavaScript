@@ -4,14 +4,44 @@ function tocaSom(idElementoAudio) {
 
 const ListaDeTeclas = document.querySelectorAll('.tecla');
 
-let contador = 0;
+for (let contador = 0; contador < ListaDeTeclas.length; contador ++) { //for permite criação de variavel e condicao
 
+  const tecla = ListaDeTeclas[contador];
+  const instrumento = tecla.classList[1];// template string
+  const idAudio = `#som_${instrumento}`;
+  // console.log(idAudio);
+
+  tecla.onclick = function() {
+    tocaSom(idAudio);
+  }
+}
+  
+  /*
+  contador = contador + 1;
+  mesma coisa que: 
+  contador ++
+  */
+ 
+  //console.log(contador);
+
+
+/* 
+se fosse feito com while
 while (contador < ListaDeTeclas.length) {
-  ListaDeTeclas[contador].onclick = function() {
-    tocaSom('#som_tecla_pom');
+
+  const tecla = ListaDeTeclas[contador];
+  const instrumento = tecla.classList[1];
+  // template string
+  const idAudio = `#som_${instrumento}`;
+  // console.log(idAudio);
+
+  tecla.onclick = function() {
+    tocaSom(idAudio);
   }
   
   contador = contador + 1;
  
-  console.log(contador);
+  //console.log(contador);
+  
 }
+*/
